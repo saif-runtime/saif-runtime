@@ -1,4 +1,4 @@
-<img src=".github/icon.png" width="200" />
+<img src=".github/icon.png" width="100" />
 
 ![GitHub Release](https://img.shields.io/github/v/release/saif-runtime/saif-runtime)
 ![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/saif-runtime/saif-runtime/total)
