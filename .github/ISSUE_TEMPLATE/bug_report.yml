@@ -1,0 +1,60 @@
+name: Bug report
+description: Something in Saif crashes, glitches, or doesn't work as expected
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug. Please search [existing issues](https://github.com/saif-runtime/saif-runtime/issues) first to avoid duplicates.
+
+        Saif does not include GTA:SA game files and cannot help with obtaining them. You must own a legitimate copy of the game.
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: A clear description of the problem. Screenshots or screen recordings are welcome.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: How can we make it happen again?
+      placeholder: |
+        1. Open Saif
+        2. Select the game folder
+        3. Press Launch
+        4. ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: What did you expect to happen instead?
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs or crash report
+      description: Paste the relevant Saif runtime log here. You can find these in ~/Library/Application Support/saif/logs. This is auto-formatted as code.
+      render: shell
+    validations:
+      required: false
+  - type: textarea
+    id: other-info
+    attributes:
+      label: Other important information
+      description: List anything else that might be relevant, such as mods, custom scripts, display, or other software that might be affecting Saif.
+    validations:
+      required: false
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checklist
+      options:
+        - label: I searched existing issues and this has not been reported
+          required: true
+        - label: I own a legitimate copy of GTA San Andreas
+          required: true
